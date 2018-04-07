@@ -19,7 +19,7 @@ Server-side
 -------
 The server will handle everything on its own. Right now, the server supports only 1 file upload at a time. Read the Multer docs if you want to modify this project to support more than 1 file uploads. Also note that there are no file-size limits in this project. In other words, this project isn't suited for production without some modifications. It's meant as a practice project.
 
-Made by [Fog Creek](https://fogcreek.com/)
+Made by [Alex Cannon](linkedin.com/in/alexander-cannon-2a5b0513b/)
 -------------------
 
 \ ゜o゜)ノ
