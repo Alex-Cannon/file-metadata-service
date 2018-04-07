@@ -1,25 +1,23 @@
-Welcome to the Glitch BETA
+Welcome to my File-metadata microservice
 ==========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is a simple microservice that returns the length of a file uploaded.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Get started:
 
-Find out more [about Glitch](https://glitch.com/about).
+1. Clone this repo to your local machine.
+2. run *npm install*
+3. run *npm start* to start the server.
 
+How to use the service:
 
-Your Project
-------------
+Client-side
+--------
+Send a form *POST* request to */get-file-size*. Be sure that your form has an **enctype="multipart/form-data"** in order to upload files. Also, give your file a **name=""** attribute for a unique id. See public/index.html for an example.
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
+Server-side
+-------
+The server will handle everything on its own. Right now, the server supports only 1 file upload at a time. Read the Multer docs if you want to modify this project to support more than 1 file uploads. Also note that there are no file-size limits in this project. In other words, this project isn't suited for production without some modifications. It's meant as a practice project.
 
 Made by [Fog Creek](https://fogcreek.com/)
 -------------------
